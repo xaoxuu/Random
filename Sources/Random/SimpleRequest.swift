@@ -21,6 +21,9 @@ struct SimpleResponse {
     func mapDictionary() throws -> [AnyHashable: Any]? {
         try JSONSerialization.jsonObject(with: data) as? [AnyHashable: Any]
     }
+    func mapString() -> String? {
+        String(data: data, encoding: .utf8)
+    }
 }
 
 struct SimpleRequest {

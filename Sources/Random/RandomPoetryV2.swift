@@ -10,9 +10,8 @@ import Foundation
 fileprivate let tokenURL = "https://v2.jinrishici.com/token"
 fileprivate let fetchURL = "https://v2.jinrishici.com/sentence"
 
-
 /// 随机诗词
-public struct RandomPoetry {
+public struct RandomPoetryV2 {
     
     /// 诗词原文
     struct PoetryOrigin {
